@@ -1,0 +1,24 @@
+--
+import { HOMEPAGE_URL } from '../config';
+import HeaderLink from './HeaderLink.astro';
+import { IoLogoGithub } from 'react-icons/io5/index.js'
+--
+
+<header class="fixed w-full pq2 z-20 backdrop-blur-md">
+	<div class="mx-auto max-w-3xl">
+		<nav class="flex items-center gap-3 text-base">
+		<h2 class="font-semibold tracking-ticker p-2 font-mplus text-lg">
+			Luis Lucas
+		</h2>
+			<div class="items-center gap-6 hidden md:flex">
+				<HeaderLink href="/about" target="_blank">
+					About
+				</HeaderLink>
+				<HeaderLink href="https://github.com/withastro/astro" target="_blank">
+					<IoLogoGithub />Source
+				</HeaderLink>
+			</div>
+			<div class="flex-1"></div>
+		</nav>
+	</div>
+</header>
